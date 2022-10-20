@@ -37,3 +37,8 @@ console.log(carro);
 //carro.buizina();
 
 document.getElementById("texto").innerHTML= soma(a, b);
+
+alteraACor = function(){
+    let div = document.getElementById("div");
+    div.style.backgroundColor = "red";
+};
