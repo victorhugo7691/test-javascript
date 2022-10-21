@@ -141,6 +141,17 @@ let dataBrasil = data.toLocaleDateString('pt-BR');
 
 console.log(dataBrasil);
 
+//requisição à outro site
+const ajax = new XMLHttpRequest();
+ajax.open('GET', 'https://viacep.com.br/ws/74767003/json/');
+ajax.send();
+
+ajax.onload = function(){//quando carregar
+    document.getElementById('endereco').innerHTML = this.responseText;
+    let obj = JSON.parse(this.responseText); //transforma o texto em objeto
+    console.log(obj.ddd);
+}
+
 selecaoDeAno();
 timerDeVisualizacao();
 apresentarTime(); 
