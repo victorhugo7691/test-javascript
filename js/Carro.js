@@ -27,3 +27,8 @@ uno.setMarca("VW");
 
 console.log(uno);
 console.log(uno.buzina());
+
+let texto = JSON.stringify(uno); //tranforma objeto em texto
+console.log(texto);
+
+let obj = JSON.parse(texto); //Transforma texto em objeto
