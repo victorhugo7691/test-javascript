@@ -125,6 +125,22 @@ timerDeVisualizacao = function(){//Roda a cada 5000s
     }, 5000);
 }
 
+//Datas
+
+let data = new Date();
+let ano = data.getFullYear();
+let mes = data.getMonth();
+let dia = data.getDate();
+let diaDaSemana = data.getDay();
+
+let hora = data.getHours();
+let minutos = data.getMinutes();
+let segundos = data.getSeconds();
+
+let dataBrasil = data.toLocaleDateString('pt-BR');
+
+console.log(dataBrasil);
+
 selecaoDeAno();
 timerDeVisualizacao();
-apresentarTime();
+apresentarTime(); 
