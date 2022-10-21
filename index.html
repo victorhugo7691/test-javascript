@@ -2,7 +2,7 @@
     <head>
         <title>Java Script</title>
     </head>
-    <body>
+    <body onload="alert('Carregou a pagina')" onresize="console.log('alterou o tamanho')">
         <h1>Texto apresentado</h1>
         <p id="texto"></p>
         <p>
@@ -12,10 +12,23 @@
         </p>
 
         <button onclick="mensagem()">Clique p/ mensagem</button>
-
+        <select id="itens" onchange="select()">
+            <option value="1">valor 1</option>
+            <option value="2">valor 2</option>
+            <option value="3">valor 3</option>
+        </select>
         <div id="div" onmouseover="alteraACor()" style="margin: auto auto; height: 200px; background-color: aqua;"></div>
         
         <input id="input" type="text" placeholder="Digite Algo" style="padding:80px; font-size: 40px;"></input>
+
+        <button id="lista" onclick="imprimirALista()">Imprimir lista</button>
+        <p id="vetor"></p>
+        <p id="relogio"></p>
+        <p id="texto2"></p>
+
+        <select id="ano">
+            <option selected disabled>Selecione o ano</option>
+        </select>
 
         <script src="js/index.js"></script>
     </body>
