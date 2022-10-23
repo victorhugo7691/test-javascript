@@ -30,7 +30,7 @@ input{
     padding-left: 10%;
 }
 
-button.add{
+button.btn-add{
     width: 20%;
     cursor: pointer;
     background: green;
@@ -47,7 +47,7 @@ main{
     flex-flow: row wrap;
     width: 90%;
     margin: auto auto;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     padding-top: 40px;
 }
 
@@ -60,25 +60,51 @@ main{
     height: 80px;
     width: 100%;
     box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
 }
 
 .item-icone{
     flex: 20%;
-    border: 1px solid orangered;
     text-align: center;
     font-size: 2rem;
 }
 
 .item-nome{
     flex: 55%;
-    border: 1px solid deeppink;
-    text-align: center;
-    font-size: 2rem
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .item-botao{
     flex: 25%;
-    border: 1px solid green;
+   /* border: 1px solid green;*/
     text-align: center;
-    font-size: 2rem
+    font-size: 2rem 
+}
+
+.item.clicado{
+    background: #d4f6d9;
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete{
+    background: red;
+    color: white;
+    border: none;
+    padding:10px;
+    height: 80px;
+    width: 100%;
+}
+
+.clicado{
+
+}
+
+.mdi-check-circle{
+    color: green;
 }
